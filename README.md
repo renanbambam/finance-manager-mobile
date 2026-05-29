@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+<h1 align="center">Finance Manager — Mobile</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  Cross-platform personal & business finance app — offline-first, with local persistence and rich data visualization.
+</p>
 
-## Get started
+<p align="center">
+  <img alt="React Native" src="https://img.shields.io/badge/React%20Native-0.74-61DAFB?style=flat-square&logo=react&logoColor=black">
+  <img alt="Expo" src="https://img.shields.io/badge/Expo-51-000020?style=flat-square&logo=expo&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Redux Toolkit" src="https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=flat-square&logo=redux&logoColor=white">
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-Offline--first-003B57?style=flat-square&logo=sqlite&logoColor=white">
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Overview
 
-2. Start the app
+**Finance Manager — Mobile** is the mobile tier of a three-platform financial-management product. It lets users track accounts, expenses and invoices, and visualize their financial position through interactive charts. The app works **offline-first**: data is persisted locally in SQLite and surfaced through a Redux store, so the UI stays fast and usable without connectivity.
 
-   ```bash
-    npx expo start
-   ```
+Part of the same product family:
 
-In the output, you'll find options to open the app in a
+| Tier | Repository | Stack |
+|------|-----------|-------|
+| API | [`finance-api-quarkus`](https://github.com/renanbambam/finance-api-quarkus) | Java 21 · Quarkus · MongoDB |
+| Web client | [`finance-manager-web`](https://github.com/renanbambam/finance-manager-web) | Angular 16 |
+| **Mobile client (this repo)** | `finance-manager-mobile` | React Native · Expo |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Features
 
-## Get a fresh project
+- **Offline-first persistence** — local SQLite database (`finance.db`) accessed through a custom `useDatabase` hook.
+- **Centralized state** — Redux Toolkit store split into `contas` (accounts), `despesas` (expenses) and `faturas` (invoices) slices.
+- **Data visualization** — charts powered by `react-native-gifted-charts`, `svg-charts` and `d3` for income/expense breakdowns and trends.
+- **Navigation** — Expo Router (file-based) with combined drawer + bottom-tab navigation.
+- **Forms & validation** — `react-hook-form` with reusable modal components.
+- **Theming** — light/dark support via themed components and a centralized color config.
+- **Local notifications** — `expo-notifications` for reminders.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## Architecture
+
+```mermaid
+graph TD
+  UI[Screens & Components<br/>Expo Router] --> Store[Redux Toolkit Store]
+  UI --> Hook[useDatabase hook]
+  Store --> Hook
+  Hook --> DB[(SQLite · finance.db)]
+  Store -.->|contas / despesas / faturas| Slices[Reducers]
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+| Area | Path | Responsibility |
+|------|------|----------------|
+| Routing & screens | `app/` | File-based routes (Expo Router), tab layout |
+| Reusable UI | `components/` | Themed views, modals, forms, headers, navigation |
+| State | `src/redux/reducers/` | `contas`, `despesas`, `faturas` slices |
+| Persistence | `hooks/useDataBase.ts` | SQLite schema bootstrap, queries, seeding |
+| Config | `src/config/` | Theme colors and app constants |
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Getting started
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Prerequisites
+- Node.js 18+
+- Expo CLI (`npx expo`)
+- Android Studio / Xcode for native emulators (optional — Expo Go works for quick runs)
 
-## Join the community
+### Install & run
+```bash
+npm install
+npm start        # Expo dev server
+```
+Then launch a target:
+```bash
+npm run android  # Android emulator / device
+npm run ios      # iOS simulator
+npm run web      # Web build
+```
 
-Join our community of developers creating universal apps.
+### Quality
+```bash
+npm run lint     # Expo lint
+npm test         # Jest (watch)
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## Tech stack
+
+`React Native 0.74` · `Expo 51` · `TypeScript` · `Expo Router` · `Redux Toolkit` · `expo-sqlite` · `react-hook-form` · `react-native-gifted-charts` / `d3` · `axios`
