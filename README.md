@@ -91,3 +91,33 @@ npm test         # Jest (watch)
 ## Tech stack
 
 `React Native 0.74` · `Expo 51` · `TypeScript` · `Expo Router` · `Redux Toolkit` · `expo-sqlite` · `react-hook-form` · `react-native-gifted-charts` / `d3` · `axios`
+
+---
+
+## Testing
+
+```bash
+npm run lint     # Expo lint
+npm test         # Jest
+```
+
+Continuous integration runs lint and a type-check build on every push (GitHub Actions).
+
+---
+
+## Screenshots
+
+<!-- Add real captures (emulator / device) to docs/screenshots/ and embed them here, e.g.:
+![Dashboard](docs/screenshots/dashboard.png)
+![Accounts](docs/screenshots/accounts.png)
+-->
+
+_Captures of the main screens are tracked in `docs/screenshots/`._
+
+---
+
+## Future Improvements
+
+- Add automated component tests for the main screens.
+- Synchronize the local SQLite store with the backend API.
+- Publish a downloadable build (APK) through GitHub Releases.
