@@ -23,6 +23,11 @@ export default [
       "react/prop-types": "off",
       // Literal apostrophes in copy are acceptable.
       "react/no-unescaped-entities": "off",
+      // With the JSX runtime, a leftover `import React` is harmless — don't fail on it.
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^React$" },
+      ],
     },
   },
 ];
