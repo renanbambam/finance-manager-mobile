@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="880" viewBox="0 0 420 880" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from app/(tabs)/index.tsx + constants/Colors.ts (light) -->
+  <rect width="420" height="880" rx="40" fill="#1e1e1e"/>
+  <rect x="14" y="14" width="392" height="852" rx="30" fill="#F8F6F0"/>
+  <!-- notch -->
+  <rect x="160" y="26" width="100" height="22" rx="11" fill="#1e1e1e"/>
+
+  <!-- header -->
+  <text x="38" y="110" fill="#1E1E1E" font-size="26" font-weight="700">Dashboard</text>
+  <circle cx="372" cy="100" r="16" fill="none" stroke="#1E1E1E" stroke-width="2"/>
+  <circle cx="372" cy="94" r="5.5" fill="none" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M 362 110 a 10 8 0 0 1 20 0" fill="none" stroke="#1E1E1E" stroke-width="2"/>
+
+  <!-- card: Receitas -->
+  <g>
+    <rect x="38" y="148" width="344" height="86" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="186" fill="#1E1E1E" font-size="17">Receitas</text>
+    <text x="58" y="214" fill="#50C878" font-size="20" font-weight="700">R$ 3.250,00</text>
+    <text x="362" y="196" fill="#666666" font-size="14" text-anchor="end">Médias</text>
+  </g>
+  <!-- card: Despesas -->
+  <g>
+    <rect x="38" y="250" width="344" height="86" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="288" fill="#1E1E1E" font-size="17">Despesas</text>
+    <text x="58" y="316" fill="#DC143C" font-size="20" font-weight="700">R$ 1.870,00</text>
+    <text x="362" y="298" fill="#666666" font-size="14" text-anchor="end">Previsto</text>
+  </g>
+  <!-- card: Faturas -->
+  <g>
+    <rect x="38" y="352" width="344" height="86" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="390" fill="#1E1E1E" font-size="17">Faturas</text>
+    <text x="58" y="418" fill="#DC143C" font-size="20" font-weight="700">R$ 920,00</text>
+    <text x="362" y="400" fill="#666666" font-size="14" text-anchor="end">Faturado</text>
+  </g>
+  <!-- card: Pagamentos -->
+  <g>
+    <rect x="38" y="454" width="344" height="86" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="492" fill="#1E1E1E" font-size="17">Pagamentos</text>
+    <text x="58" y="520" fill="#DC143C" font-size="20" font-weight="700">R$ 540,00</text>
+    <text x="362" y="502" fill="#666666" font-size="14" text-anchor="end">Custos extras</text>
+  </g>
+
+  <!-- tab bar -->
+  <rect x="14" y="800" width="392" height="66" rx="0" fill="#ffffff"/>
+  <line x1="14" y1="800" x2="406" y2="800" stroke="#e5e2db"/>
+  <circle cx="150" cy="832" r="6" fill="#B1976B"/>
+  <text x="150" y="852" fill="#B1976B" font-size="11" text-anchor="middle">Home</text>
+  <circle cx="270" cy="832" r="6" fill="#999"/>
+  <text x="270" y="852" fill="#999" font-size="11" text-anchor="middle">Explore</text>
+</svg>

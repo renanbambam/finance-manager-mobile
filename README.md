@@ -107,12 +107,21 @@ Continuous integration runs lint and a type-check build on every push (GitHub Ac
 
 ## Screenshots
 
-<!-- Add real captures (emulator / device) to docs/screenshots/ and embed them here, e.g.:
-![Dashboard](docs/screenshots/dashboard.png)
-![Accounts](docs/screenshots/accounts.png)
--->
+> UI mockups faithfully derived from the actual screens, colors and domain
+> (`app/(tabs)/index.tsx`, `components/DetalheCategoriaModal.tsx`,
+> `components/FormularioCategoria.tsx`, `constants/Colors.ts`). See [`docs/screenshots/`](docs/screenshots).
 
-_Captures of the main screens are tracked in `docs/screenshots/`._
+| Dashboard | Receitas | Despesas |
+|-----------|----------|----------|
+| ![Dashboard](docs/screenshots/dashboard.svg) | ![Receitas](docs/screenshots/receitas.svg) | ![Despesas](docs/screenshots/despesas.svg) |
+
+| Faturas | Formulário |
+|---------|------------|
+| ![Faturas](docs/screenshots/faturas.svg) | ![Formulário](docs/screenshots/formulario.svg) |
+
+The app organizes finance data into the categories rendered by the dashboard and the
+category-detail modal: **Receitas, Despesas, Faturas, Pagamentos** — each with a trend chart
+and a history list, plus an add form per category.
 
 ---
 

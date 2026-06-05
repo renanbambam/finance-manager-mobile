@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="880" viewBox="0 0 420 880" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from components/DetalheCategoriaModal.tsx (categoria 'Despesas') -->
+  <rect width="420" height="880" rx="40" fill="#1e1e1e"/>
+  <rect x="14" y="14" width="392" height="852" rx="30" fill="#F8F6F0"/>
+  <rect x="160" y="26" width="100" height="22" rx="11" fill="#1e1e1e"/>
+
+  <text x="38" y="106" fill="#1E1E1E" font-size="26">&#8592;</text>
+  <text x="210" y="104" fill="#1E1E1E" font-size="20" font-weight="700" text-anchor="middle">Despesas</text>
+
+  <rect x="38" y="132" width="344" height="200" rx="6" fill="#EAE4D9"/>
+  <polyline points="70,200 138,240 206,210 274,270 342,250" fill="none" stroke="#DC143C" stroke-width="2.5"/>
+  <g fill="#1E1E1E" font-size="12" text-anchor="middle">
+    <text x="70" y="312">820</text>
+    <text x="138" y="312">640</text>
+    <text x="206" y="312">760</text>
+    <text x="274" y="312">410</text>
+    <text x="342" y="312">540</text>
+  </g>
+
+  <text x="210" y="372" fill="#666666" font-size="16" font-weight="700" text-anchor="middle">Histórico (últimos vinte registros)</text>
+
+  <g>
+    <rect x="38" y="396" width="344" height="64" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="430" fill="#1E1E1E" font-size="17">Gastos:</text>
+    <text x="362" y="430" fill="#DC143C" font-size="19" font-weight="700" text-anchor="end">R$ 540,00</text>
+    <text x="58" y="450" fill="#666666" font-size="12">4</text>
+  </g>
+  <g>
+    <rect x="38" y="472" width="344" height="64" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="506" fill="#1E1E1E" font-size="17">Gastos:</text>
+    <text x="362" y="506" fill="#DC143C" font-size="19" font-weight="700" text-anchor="end">R$ 410,00</text>
+    <text x="58" y="526" fill="#666666" font-size="12">3</text>
+  </g>
+  <g>
+    <rect x="38" y="548" width="344" height="64" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="582" fill="#1E1E1E" font-size="17">Gastos:</text>
+    <text x="362" y="582" fill="#DC143C" font-size="19" font-weight="700" text-anchor="end">R$ 760,00</text>
+    <text x="58" y="602" fill="#666666" font-size="12">2</text>
+  </g>
+  <g>
+    <rect x="38" y="624" width="344" height="64" rx="8" fill="#ECE9E2"/>
+    <text x="58" y="658" fill="#1E1E1E" font-size="17">Gastos:</text>
+    <text x="362" y="658" fill="#DC143C" font-size="19" font-weight="700" text-anchor="end">R$ 640,00</text>
+    <text x="58" y="678" fill="#666666" font-size="12">1</text>
+  </g>
+</svg>

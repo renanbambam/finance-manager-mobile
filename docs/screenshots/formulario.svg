@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="880" viewBox="0 0 420 880" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- Faithful UI mockup derived from components/FormularioCategoria.tsx (categoria 'Faturas') -->
+  <rect width="420" height="880" rx="40" fill="#1e1e1e"/>
+  <rect x="14" y="14" width="392" height="852" rx="30" fill="#F8F6F0"/>
+  <rect x="160" y="26" width="100" height="22" rx="11" fill="#1e1e1e"/>
+
+  <!-- header -->
+  <text x="38" y="106" fill="#1E1E1E" font-size="26">&#8592;</text>
+  <text x="210" y="104" fill="#1E1E1E" font-size="20" font-weight="700" text-anchor="middle">Adicionar Faturas</text>
+
+  <!-- form card (fundoCard) -->
+  <rect x="38" y="136" width="344" height="600" rx="8" fill="#ECE9E2"/>
+  <text x="62" y="180" fill="#1E1E1E" font-size="20" font-weight="700">Fatura</text>
+
+  <!-- Valor -->
+  <rect x="62" y="200" width="296" height="50" rx="8" fill="#B1976B"/>
+  <text x="78" y="231" fill="#ffffff" font-size="15">Valor</text>
+
+  <!-- Data de emissão -->
+  <rect x="62" y="270" width="296" height="50" rx="8" fill="#B1976B"/>
+  <text x="78" y="301" fill="#ffffff" font-size="15">Data de emissão</text>
+
+  <!-- Data de vencimento -->
+  <rect x="62" y="340" width="296" height="50" rx="8" fill="#B1976B"/>
+  <text x="78" y="371" fill="#ffffff" font-size="15">Data de vencimento</text>
+
+  <!-- Descrição -->
+  <rect x="62" y="410" width="296" height="50" rx="8" fill="#B1976B"/>
+  <text x="78" y="441" fill="#ffffff" font-size="15">Descrição</text>
+
+  <!-- Button -->
+  <rect x="62" y="492" width="296" height="46" rx="6" fill="#2f6fed"/>
+  <text x="210" y="521" fill="#ffffff" font-size="15" font-weight="600" text-anchor="middle">Adicionar Fatura</text>
+</svg>
